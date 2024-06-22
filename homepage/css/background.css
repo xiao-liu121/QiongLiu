@@ -26,7 +26,7 @@ img#leftlogo {
 div#name {  
     position:              absolute;  
     top:                   48%;                                 /* 从顶部开始计算的位置 */  
-    left:                  44%;                                 /* 从左侧开始计算的位置 */
+    left:                  42%;                                 /* 从左侧开始计算的位置 */
     transform:             translateY(-50%);                    /* 向上移动自身高度的50%，实现垂直居中 */  
     font-size:             50px;    
     font-family:           'Times New Roman', Times, serif;     /* 字体样式 */  
