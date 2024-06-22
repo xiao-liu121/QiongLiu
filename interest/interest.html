@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>兴趣爱好</title>
+    <link rel="stylesheet" href="../homepage/css/background.css">
+    <link rel="stylesheet" href="./interest.css">
+</head>
+<body>
+    <!-- 页眉区header，内部又分为三个部分：leftlogo、name、rightlogo -->
+    <header id="head">
+        <img src="./images/leftlogo.jpg" id="leftlogo">
+        <div id="name">Qiong Liu</div>
+        <img src="./images/rightlogo.jpg" id="rightlogo">
+    </header>
+    <!-- end of head -->
+    <!-- 导航区nav，均可实现跳转功能 -->
+    <nav>
+        <ul>  
+            <li><a href="../homepage/homepage.html">个人主页</a></li>
+            <li><a href="./interest.html" id="active">兴趣爱好</a></li>  
+            <li><a href="../hometown/hometown.html">我的家乡</a></li>  
+            <li><a href="../travelling/travelling.html">旅行日记</a></li>  
+            <li><a href="../reading/reading.html">阅读打卡</a></li>  
+            <li><a href="../contact/contact.html">与我联系</a></li>  
+        </ul> 
+    </nav>
+    <!-- end of nav -->
+    <!-- 主内容区main，内部分为两个部分：wrapper和sidebar -->
+    <div id="main">
+        <!-- 主体内容区wrapper，内部分为三个部分 -->
+        <div id="wrapper">
+            <!-- 每个区都有一个公共类interest，用来放置内容 -->
+            <!-- 内容区interest，内部又分为img和text两个部分 -->
+            <div class="interest">
+                <img src="./images/dayumaoqiu.jpg" class="img">
+                <div class="text">
+                    <h3>打羽毛球</h3>
+                    <p>打羽毛球是我生活中不可或缺的一部分。它是我释放压力、享受自由的方式。每当我踏上球场，我就仿佛进入了一个属于自己的小世界，只有我和那颗轻盈的羽毛球在空中舞动。我喜欢那种追逐、跳跃、挥拍的感觉，仿佛时间在这一刻都慢了下来。羽毛球不仅仅是一项运动，它更是我与朋友们交流、分享快乐的桥梁。在球场上，我们可以尽情挥洒汗水，也可以开怀大笑，享受那份简单而纯粹的快乐。</p>
+                </div>
+            </div>
+            <div class="interest">
+                <div class="text">
+                    <h3>阅读</h3>
+                    <p>阅读，对我而言，是灵魂的滋养，是心灵的旅行。在书页间，我寻找着智慧的火花，品味着生活的韵味。每一本书都是一扇通往新世界的窗户，我沉浸在书的世界里，与作者共鸣，与角色共情。阅读让我跨越时空的界限，与古今中外的智者对话，感受他们的思想与情感。它丰富了我的内心世界，提升了我的精神层面，让我在喧嚣的世界中找到了片刻的宁静与满足。</p>
+                </div>
+                <img src="./images/yuedu.jpg" class="img">
+            </div>
+            <div class="interest">
+                <img src="./images/lvyou.jpg" class="img">
+                <div class="text">
+                    <h3>旅游</h3>
+                    <p>旅游，于我而言，是一种心灵的远航。我热衷于背起行囊，踏上新的征程，让心灵在异乡的风景中自由翱翔。我喜欢漫步在陌生的街头，感受不同地域的风情，品味每一座城市独特的韵味。旅游不仅让我领略了大自然的鬼斧神工，更让我深刻体验了人类文明的多样性。在旅途中，我能够亲身接触当地的文化、历史、习俗，与当地人交流，感受他们的热情与友善。这些经历丰富了我的内心世界，让我更加珍惜与他人的交流与互动。旅游是我生活中最美好的一部分，它让我不断探索、不断发现，永远保持热情的态度。</p>
+                </div>
+            </div>
+        </div>
+        <!-- end of wrapper -->
+        <!-- 边栏区sidebar，内部分为两个部分：container1和text -->
+        <div id="sidebar">
+            <div id="container1">
+                <img src="./images/touxiang.jpg" alt="">
+            </div>
+            <div id="text">
+                <ul>
+                    <li>个人主页</li>
+                    <li>兴趣爱好</li>
+                    <li>我的家乡</li>
+                    <li>旅行日记</li>
+                    <li>阅读打卡</li>
+                    <li>与我联系</li>
+                </ul>
+            </div>
+        </div>
+        <!-- end of sidebar -->
+    </div>
+    <!-- end of main -->
+    <!-- 页脚区foot,内部有一个部分：foot-container -->
+    <footer id="foot">
+        <div id="foot-container">
+            <h5>Qiong Liu &copy 版权所有</h5>
+            <p>联系邮箱：1744074855@qq.com</p>
+        </div>
+    </footer>
+    <!-- end of foot -->
+</body>
+</html>

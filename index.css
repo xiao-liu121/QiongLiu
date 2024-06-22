@@ -1,0 +1,181 @@
+/* 设置body的背景颜色、边距、行高和字体样式 */  
+body {  
+    background-color:  deepskyblue;                         /* 背景颜色为深天蓝色 */  
+    margin:              0;                                   /* 外边距为0，用于消除默认边距 */  
+    line-height:         0.5em;                               /* 行高为0.5em */  
+    font-family:         华文楷体;                             /* 字体为华文楷体 */  
+    font-size:           medium;                              /* 字体大小为中等 */  
+}  
+  
+/* header的样式设置 */  
+header#head {    
+    height:              100px;                               /* 高度为100px */  
+    background-color:  rgb(199, 226, 250);                  /* 背景颜色为淡蓝色 */  
+    padding:             10px;                                /* 内边距为10px */  
+    position:            relative;                            /* 设置为相对定位，作为子元素定位的基准 */  
+}  
+  
+/* 图片样式设置 */  
+img#doraemon {   
+    float:               left;                                /* 浮动到左侧 */  
+    margin-right:        10px;                                /* 右侧外边距为10px */  
+    height:              100px;                               /* 高度为100px */   
+    width:               auto;                                /* 宽度自动调整以保持图片比例 */  
+    margin-left:         200px;                               /* 左侧外边距为200px */  
+}    
+  
+/* 名字文本的样式和定位 */  
+div#name {    
+    position:            absolute;                            /* 绝对定位，相对于最近的已定位祖先元素（或body） */   
+    top:                 48%;                                 /* 距顶部48%的位置 */  
+    left:                320px;                               /* 距左侧320px的位置 */  
+    transform:           translateY(-50%);                    /* 向上移动自身高度的50%，实现垂直居中 */    
+    font-size:           50px;                                /* 字体大小为50px */  
+    font-family:         'Times New Roman', Times, serif;     /* 字体为Times New Roman */  
+    font-style:          italic;                              /* 字体样式为斜体 */  
+    font-weight:         bold;                                /* 字体加粗 */  
+    color:             rgb(11, 153, 215);                   /* 字体颜色为蓝绿色 */  
+}    
+  
+/* 头部文本的样式和定位 */  
+div#headertext {    
+    float:               right;                               /* 浮动到右侧 */  
+    text-align:          right;                               /* 文本右对齐 */  
+    margin-right:        30px;                                /* 右侧外边距为30px */  
+    margin-top:          5px;                                 /* 顶部外边距为5px */  
+    line-height:         1.5em;                               /* 行高为1.5em */  
+    font-size:           30px;                                /* 字体大小为30px */  
+    font-style:          oblique;                             /* 字体样式为倾斜 */  
+}    
+
+/* 头部文本段落的样式 */  
+div#headertext p {  
+    margin:              0;                                   /* 设置外边距为0 */ 
+} 
+  
+/* 头部文本中第一个段落的样式 */  
+div#headertext p:first-child {    
+    margin-bottom:       5px;                                 /* 底部外边距为5px */  
+}  
+  
+/* 主内容区域的样式 */  
+div#main {  
+    height:              110vh;                               /* 高度为110vh */
+    margin-bottom:       0;                                   /* 底部外边距为0 */  
+    background-image:    url(./images/beijingtu.jpg);         /* 背景图片路径 */  
+    background-repeat:   no-repeat;                           /* 背景图片不重复 */  
+    background-size:     100% auto;                           /* 背景图片宽度100%，高度自动 */  
+}
+
+/* 圆角矩形包装容器 */  
+div#wrapper {  
+    background-color:  rgb(218, 238, 254, 0.5);             /* 半透明淡蓝色背景 */  
+    border-radius:       50px;                                /* 边框圆角50px */  
+    height:              400px;                               /* 高度400px */  
+    width:               500px;                               /* 宽度500px */  
+    position:            relative;                            /* 相对定位 */  
+    left:                35%;                                 /* 距左侧35%的位置 */  
+    top:                 25%;                                 /* 距顶部25%的位置 */
+}  
+  
+/* 页脚样式 */  
+footer#foot {  
+    padding:             1px 0 5px 0;                         /* 上下内边距分别为1px和5px，左右为0 */  
+    background-color:  rgb(199, 226, 250);                  /* 背景颜色为淡蓝色 */  
+    text-align:          center;                              /* 文本居中对齐 */  
+    line-height:         0.5;                                 /* 行高设置为0.5*/  
+}  
+  
+/* 圆形图片容器 */  
+div#container1 {  
+    height:              100px;                               /* 高度100px */  
+    width:               100px;                               /* 宽度100px */  
+    position:            absolute;                            /* 绝对定位 */  
+    left:                40%;                                 /* 距左侧40%的位置 */  
+    top:                 5%;                                  /* 距顶部5%的位置 */  
+    border-radius:       50%;                                 /* 边框圆角50%，实现圆形效果 */  
+    overflow:            hidden;                              /* 超出容器的内容将被隐藏 */  
+}  
+  
+/* 圆形图片样式 */  
+div#container1 img {    
+    width:               100%;                                /* 宽度100%，与容器等宽 */  
+    height:              auto;                                /* 高度自动，保持图片比例 */  
+    border-radius:       50%;                                 /* 边框圆角50%，与容器保持一致 */  
+    object-fit:          cover;                               /* 保证图片完全覆盖容器，不拉伸或压缩 */  
+}  
+  
+/* 文本容器1 */  
+div#container2 {  
+    height:              50px;                                /* 高度50px */  
+    width:               150px;                               /* 宽度150px */  
+    position:            absolute;                            /* 绝对定位 */  
+    left:                35%;                                 /* 距左侧35%的位置 */  
+    top:                 35%;                                 /* 距顶部35%的位置 */  
+    text-align:          center;                              /* 文本居中对齐 */  
+    font-family:         'Times New Roman', Times, serif;     /* 字体族 */  
+    font-style:          oblique;                             /* 字体样式为倾斜 */  
+}  
+  
+/* 文本容器2 */  
+div#container3 {  
+    height:              50px;                                /* 高度50px */  
+    width:               400px;                               /* 宽度400px */  
+    position:            absolute;                            /* 绝对定位 */  
+    left:                10%;                                 /* 距左侧10%的位置 */  
+    top:                 55%;                                 /* 距顶部55%的位置 */  
+    text-align:          center;                              /* 文本居中对齐 */  
+    border:              solid 3px rgb(54, 179, 241);       /* 蓝色边框 */  
+    background-color:  rgb(54, 179, 241, 0.1);              /* 淡蓝色背景 */  
+    border-radius:       20px;                                /* 边框圆角20px */  
+}  
+  
+/* 按钮容器 */  
+div#button-container {    
+    position:            relative;                            /* 相对定位 */  
+    width:               100%;                                /* 宽度100% */  
+    height:              100%;                                /* 高度100% */  
+} 
+  
+/* 通用按钮样式，包括.button和.link-button */  
+.button, .link-button {    
+    display:             inline-block;                        /* 以内联块级元素显示，允许并排显示同时保持块级特性 */  
+    height:              50px;                                /* 设置按钮高度为50px */  
+    width:               100px;                               /* 设置按钮宽度为100px */  
+    line-height:         50px;                                /* 设置行高与高度相同，使文本垂直居中 */  
+    text-align:          center;                              /* 文本水平居中对齐 */  
+    border:              solid 1px rgb(54, 179, 241);       /* 设置蓝色边框，宽度为1px */  
+    border-radius:       20px;                                /* 设置边框圆角为20px */  
+    background-color:  rgb(54, 179, 241, 0.1);              /* 设置背景颜色为淡蓝色 */  
+    color:             rgb(54, 179, 241);                   /* 设置文本颜色为蓝色 */  
+    cursor:              pointer;                             /* 当鼠标悬停时显示小手图标，表示可点击 */  
+    transition:          background-color 0.3s ease;          /* 背景颜色过渡效果，0.3秒内平滑过渡 */  
+    position:            absolute;                            /* 绝对定位 */  
+    text-decoration:     none;                                /* 去除下划线 */  
+}    
+  
+/* 容器4的布局样式 */  
+div#container4 {    
+    left:                25%;                                 /* 距离父元素左侧25%的位置 */  
+    top:                 80%;                                 /* 距离父元素顶部80%的位置 */   
+}    
+  
+/* 容器5的布局样式 */  
+#container5 {    
+    left:                55%;                                 /* 距离父元素左侧55%的位置 */  
+    top:                 80%;                                 /* 距离父元素顶部80%的位置 */  
+}    
+  
+/* 悬停效果样式，当鼠标悬停在.button或.link-button上时触发 */    
+.button:hover, .link-button:hover {    
+    background-color:  rgb(147, 215, 248);                  /* 更改背景颜色为更亮的蓝色 */  
+    color:             white;                               /* 更改文本颜色为白色 */  
+}  
+  
+/* 底部容器样式 */  
+div#foot-container {  
+    position:            relative;                            /* 相对定位 */  
+    margin:              0 auto;                              /* 水平居中 */  
+    padding:             0 15px;                              /* 上下内边距为0，左右内边距为15px */  
+    box-sizing:          border-box;                          /* 盒模型为border-box，即内边距和边框包含在元素的总宽度和总高度内 */  
+}

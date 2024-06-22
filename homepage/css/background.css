@@ -1,0 +1,156 @@
+/* 设置整个页面的背景颜色、外边距和字体样式 */  
+body {  
+    background-color:    aqua;  
+    margin:                0;                                   /* 移除默认的上下左右外边距 */  
+    font-family:           华文楷体;                             /* 使用华文楷体作为页面默认字体 */  
+    font-size:             medium;                              /* 字体大小为中等 */  
+}  
+  
+/* 设置页眉的高度、背景颜色和定位 */  
+header#head {  
+    height:                100px;  
+    background-color:    rgb(199, 226, 250);  
+    position:              relative;                            /* 相对于最近的已定位祖先元素定位 */  
+}  
+  
+/* 设置左侧Logo图片的位置和样式 */  
+img#leftlogo {  
+    float:                 left;                                /* 浮动到左侧 */  
+    margin-right:          10px;                                /* 右侧外边距 */  
+    height:                100px;   
+    width:                 auto;                                /* 自动调整宽度以保持图片比例 */  
+    margin-left:           35%;                                /* 左侧外边距，使得图片在页面较左侧显示 */
+}  
+  
+/* 绝对定位页面名称文本，并设置样式 */  
+div#name {  
+    position:              absolute;  
+    top:                   48%;                                 /* 从顶部开始计算的位置 */  
+    left:                  44%;                                 /* 从左侧开始计算的位置 */
+    transform:             translateY(-50%);                    /* 向上移动自身高度的50%，实现垂直居中 */  
+    font-size:             50px;    
+    font-family:           'Times New Roman', Times, serif;     /* 字体样式 */  
+    font-style:            italic;                              /* 斜体 */  
+    font-weight:           bold;                                /* 粗体 */  
+    color:               rgb(11, 153, 215);                   /* 文本颜色 */  
+}  
+  
+/* 设置右侧Logo图片的位置和样式 */  
+img#rightlogo {  
+    float:                 right;                               /* 浮动到右侧 */  
+    margin-right:          35%;                                 /* 右侧外边距 */
+    height:                100px;   
+    width:                 auto;  
+}  
+  
+/* 导航栏的样式设置 */  
+nav ul {    
+    list-style-type:       none;                                /* 移除列表标记 */  
+    margin:                0;                                   /* 移除外边距 */  
+    padding:               0;                                   /* 移除内边距 */  
+    overflow:              hidden;                              /* 隐藏超出容器的内容 */  
+    background-color:      rgb(199, 226, 250);                /* 背景颜色 */
+    display:               flex;                                /* 使用弹性布局 */  
+    justify-content:       space-between;                       /* 两端对齐，子元素均匀分布在容器中 */  
+}    
+  
+nav ul li {    
+    flex:                  1;                                   /* 子元素占据相同宽度 */  
+    text-align:            center;                              /* 文本水平居中对齐 */  
+}    
+  
+/* 导航栏链接的样式设置 */  
+nav ul li a {    
+    display:               block;                               /* 作为块级元素显示 */  
+    color:               white;                               /* 文本颜色 */
+    font-size:             1.2em;                               /* 字体大小为1.2倍 */  
+    padding:               14px 16px;                           /* 内边距 */  
+    text-decoration:       none;                                /* 移除下划线 */  
+}    
+  
+/* 导航栏链接的悬停效果 */  
+nav ul li a:hover {    
+    background-color:    rgb(11, 153, 215);                   /* 悬停时背景颜色 */  
+}    
+  
+/* 当前页面的导航链接样式 */  
+nav ul li a#active {    
+    background-color:    rgb(11, 153, 215);                   /* 当前页面链接的背景颜色 */  
+}
+
+/* 主要内容区域的样式设置 */  
+div#main {    
+    height:                1000px;                              /* 设置内容区域的高度 */
+    margin-bottom:         0;                                   /* 移除底部外边距 */  
+    margin-top:            0;                                   /* 移除顶部外边距 */  
+    background-image:      url(../images/beijingtu.jpg);        /* 设置背景图片 */  
+    background-repeat:     no-repeat;                           /* 背景图片不重复 */
+    background-size:       100% auto;                           /* 背景图片宽度100%，高度自动 */  
+    display:               flex;                                /* 使用Flex布局 */  
+    flex-direction:        row;                                 /* Flex布局子元素水平排列 */  
+    align-items:           flex-start;                          /* 子元素在交叉轴上起点对齐（对于水平方向即为顶部对齐） */  
+}    
+  
+/* 侧边栏样式设置 */  
+div#sidebar {    
+    height:                500px;                               /* 侧边栏高度 */
+    width:                 18%;                                 /* 侧边栏宽度 */
+    background-color:    rgb(218, 238, 254, 0.5);             /* 设置半透明背景色 */  
+    border-radius:         50px;                                /* 圆角设置 */  
+    flex-shrink:           0;                                   /* 不允许该元素在flex容器中缩小 */  
+    margin-right:          10px;                                /* 右侧外边距 */  
+    position:              relative;                            /* 相对定位 */  
+    order:                 -1;                                  /* 排序优先级为负一，将会放在其他flex子元素前面 */  
+    top:                   42%;                                 /* 从父元素顶部开始计算的位置 */
+    left:                  1%;                                  /* 从父元素左侧开始计算的位置 */
+}    
+  
+/* 圆形图片容器样式设置 */  
+div#container1 {    
+    position:              absolute;                            /* 绝对定位 */  
+    top:                   20px;                                /* 距离顶部位置 */  
+    left:                  50%;                                 /* 从左侧开始计算的位置为50% */  
+    transform:             translateX(-50%);                    /* 向左平移自身宽度的50%，实现水平居中 */  
+    width:                 100px;                               /* 容器宽度 */  
+    height:                100px;                               /* 容器高度 */  
+    border-radius:         50%;                                 /* 圆形边框 */  
+    overflow:              hidden;                              /* 隐藏超出容器的内容 */  
+}    
+  
+/* 圆形图片样式设置 */  
+div#container1 img {    
+    width:                 100%;                                /* 图片宽度为容器宽度 */  
+    height:                auto;                                /* 图片高度自动，以保持比例 */  
+    border-radius:         50%;                                 /* 圆形边框 */  
+    object-fit:            cover;                               /* 缩放图片以完全覆盖容器 */  
+}    
+  
+/* 文本内容样式设置 */  
+div#text {    
+    position:              absolute;                            /* 绝对定位 */  
+    top:                   115px;                               /* 距离顶部位置 */  
+    left:                  20px;                                /* 距离左侧位置 */  
+    right:                 20px;                                /* 距离右侧位置 */  
+    text-align:            center;                              /* 文本水平居中对齐 */  
+    font-family:           华文行楷;                             /* 使用华文行楷字体 */  
+    font-size:             1.8em;                               /* 字体大小为1.8倍 */
+    line-height:           1.8em;                               /* 行高设置 */  
+    color:               rgb(11, 153, 215);                   /* 文本颜色 */  
+}   
+  
+/* 页脚样式设置 */  
+footer#foot {  
+    padding:               1px 0 5px 0;                         /* 上内边距1px，左右内边距0，下内边距5px */  
+    background-color:    rgb(199, 226, 250);                  /* 背景颜色 */  
+    text-align:            center;                              /* 文本水平居中对齐 */  
+    line-height:           0.5;                                 /* 行高设置*/  
+}
+
+/* 页脚内容容器样式设置 */  
+div#foot-container {    
+    position:              relative;                            /* 相对定位，使得容器内的元素可以使用绝对定位 */   
+    margin:                0 auto;                              /* 使得容器在水平方向上居中 */  
+    padding:               0 15px;                              /* 左右内边距为15px，上下内边距为0 */   
+    box-sizing:            border-box;                          /* 盒模型设置为border-box，确保元素的总宽度和高度包含边框和内边距 */    
+    border-top:            3px white solid;                   /* 在容器的顶部添加一个3px宽、白色、实线的边框 */  
+} 

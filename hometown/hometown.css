@@ -1,0 +1,83 @@
+/* 通用样式 */  
+body {   
+    font-size:             medium;                           /* 设置正文文本字体大小为中等 */     
+    line-height:           1.5em;                            /* 设置行高为1.5倍 */ 
+}  
+  
+/* 外层包裹容器的样式 */  
+div#wrapper {      
+    display:               flex;                             /* 设置为弹性容器 */    
+    flex-direction:        column;                           /* 子元素将沿列方向排列 */   
+    width:                 100%;                             /* 容器宽度为100%，占据整个页面宽度 */    
+    margin:                3% 6%;                            /* 设置容器外边距 */
+}  
+  
+/* #introduce 样式 */  
+div#introduce {     
+    display:               flex;                             /* 设置为弹性容器，子元素默认沿行方向排列 */       
+    align-items:           flex-start;                       /* 子元素在交叉轴上对齐到起点 */ 
+    margin-bottom:         20px;                             /* 底部外边距为20px，与下一个元素隔开一定距离 */   
+}  
+  
+/* #introduce-image 样式 */  
+img#introduce-image {      
+    flex:                  0 0 auto;                         /* 弹性基础值设置为不增长、不缩小，保持原始大小 */   
+    margin-right:          30px;                             /* 右侧外边距为30px，与文本隔开一定距离 */    
+    height:                250px;                            /* 设置图片高度为250px */  
+    width:                 auto;                             /* 宽度自动以适应比例 */    
+    border-radius:         30px;                             /* 设置图片边框圆角 */  
+}  
+  
+/* #introduce-image 悬停样式 */  
+img#introduce-image:hover {      
+    transform:             scale(1.05);                      /* 鼠标悬停时，图片放大到原尺寸的1.05倍 */   
+}  
+  
+/* #introduce-text 样式 */  
+div#introduce-text {      
+    flex:                  1;                                /* 弹性基础值设置为1，即让它占据剩余空间 */  
+}  
+  
+/* 内容包装器样式 */  
+div#cont-wrapper1, div#cont-wrapper2 {      
+    display:               flex;                             /* 设置为弹性容器，子元素沿行方向排列 */     
+    justify-content:       space-between;                    /* 子元素在主轴上均匀分布，两端有空间 */   
+    margin-bottom:         20px;                             /* 底部外边距为20px */   
+}  
+  
+/* 内容块样式 */  
+div#cont1_1, div#cont2_1, div#cont3_1, div#cont4_1, div#cont5_1,    
+div#cont1_2, div#cont2_2, div#cont3_2, div#cont4_2, div#cont5_2 {      
+    flex:                  0 0 18%;                          /* 弹性基础值设置为不增长、不缩小，且固定宽度为18% */
+    margin-right:          1%;                               /* 右侧外边距为1%，形成间隔 */     
+}  
+  
+/* 标题样式 */
+div#wrapper h2 {
+    font-size:             1.8em;                            /* 设置字体大小为1.8倍 */   
+    margin-bottom:         20px;                             /* 底部外边距为20px，与下一个元素隔开一定距离 */   
+}
+
+div#introduce-text h3 {
+    font-size:             1.5em;                            /* 设置字体大小为1.5倍 */   
+}  
+  
+/* 段落样式 */
+div#introduce-text p {
+    margin-bottom:         3px;                              /* 底部外边距为3px */    
+    font-size:             1.2em;                            /* 字体大小为1.2倍 */   
+    line-height:           1.5em;                            /* 行高为1.5倍 */   
+    margin-top:            3px;                              /* 顶部外边距为3px */ 
+}  
+  
+/* 图片样式（通用） */  
+img {     
+    width:                 180px;                            /* 设置图片宽度和高度均为180px */
+    height:                180px;
+    border-radius:         50px;                             /* 设置图片边框圆角 */  
+} 
+
+/* 图片悬停样式(通用) */  
+img:hover {    
+    transform:             scale(1.1);                       /* 使用transform属性进行缩放，将图片放大到原尺寸的1.1倍 */
+}

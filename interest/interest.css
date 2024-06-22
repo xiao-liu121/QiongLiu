@@ -1,0 +1,63 @@
+    /* 外层包裹容器的样式 */  
+    /* 设置 div#wrapper 为 flex 容器，允许其子元素以弹性方式排列 */  
+    div#wrapper {    
+        display:            flex;                             
+        flex-wrap:          wrap;                            /* 允许子元素在需要时换行显示 */  
+        justify-content:    center;                          /* 子元素在主轴（默认水平方向）上居中显示 */  
+        align-items:        flex-start;                      /* 子元素在交叉轴（默认垂直方向）上从起点开始排列 */  
+        margin:             auto;                            /* 容器左右外边距为自动，使得容器在水平方向上居中 */  
+        max-width:          1200px;                          /* 设置最大宽度为 1200px */  
+        padding:            20px;                            /* 容器内部填充为 20px */  
+    }  
+    
+    /* .interest 的样式 */  
+    /* 设置 div.interest 为 flex 容器，允许其子元素以弹性方式排列 */  
+    div.interest {    
+        display:            flex;   
+        align-items:        center;                           /* 子元素在交叉轴上居中对齐 */   
+        margin:             10px;                             /* 设置元素之间的外边距 */
+    }  
+    
+    /* .img 的样式 */    
+    .img {    
+        align-items:        center;  
+        flex:               0 0 auto;                         /* flex 属性设置为不增长、不缩小，并且基础大小为 auto，即img 会保持其原始大小 */     
+        margin-right:       30px;                             /* 设置 img 左右外边距 */
+        margin-left:        30px;  
+        height:             250px;                            /* 设置 img 的高度 */ 
+        width:              auto;                             /* 宽度设置为自动 */   
+        max-width:          100%;                             /* 最大宽度为父元素的 100% */  
+        border-radius:      10px;                             /* 设置边框圆角 */ 
+        box-shadow:         0 4px 8px rgba(0, 0, 0, 0.1);   /* 添加阴影效果 */   
+        transition:         transform 0.3s ease-in-out;       /* 添加过渡效果，当元素变换时（如缩放） */ 
+        object-fit:         cover;                            /* 保持图片的比例不变，同时覆盖整个容器 */  
+    }   
+    
+    /* .img 悬停时的样式 */   
+    .img:hover {    
+        transform:          scale(1.05);                      /* 当鼠标悬停在 .img 上时，将其缩放 1.05 倍 */ 
+    }  
+    
+    /* .text 的样式 */  
+    /* 设置 div.text 的边框、圆角、阴影和内边距 */  
+    div.text {  
+        border:             1px solid #ddd;  
+        box-shadow:         0 2px 4px rgba(0, 0, 0, 0.1);   
+        border-radius:      20px;                             /* 设置圆角为 20px */     
+        padding:            5px 20px 5px 20px;  
+    }  
+    
+    /* h3 的样式 */  
+    /* 设置 h3 的字体大小、字重和行高 */  
+    div.text h3 {
+        font-size:          1.5em;  
+        font-weight:        bold;  
+        line-height:        1em;  
+    }  
+    
+    /* p 的样式 */  
+    /* 设置 p 的行高和字体大小 */  
+    div.text p{
+        line-height:        1.5em;  
+        font-size:          1.2em;  
+    }

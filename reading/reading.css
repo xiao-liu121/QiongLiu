@@ -1,0 +1,87 @@
+/* 包裹所有书籍的容器 */  
+div#wrapper {      
+    flex:             1;                                   /* 占据剩余空间，与其他flex子项共享 */     
+    display:          flex;                                /* 启用flex布局 */      
+    justify-content:  flex-start;                          /* 内容沿主轴起始位置对齐 */     
+    align-items:      stretch;                             /* 子项沿交叉轴拉伸至与容器一致的高度 */     
+    height:           900px;                               /* 容器高度为900px */
+    width:            calc(100% - 330px);                  /* 宽度为100%减去330px，用于留出侧边栏空间 */   
+    padding:          30px;                                /* 内边距为30px */   
+    order:            0;                                   /* flex子项的默认排序为0 */    
+}  
+  
+/* 书籍的样式 */  
+div.book {      
+    flex:             1;                                   /* 占据剩余空间，与其他flex子项共享 */       
+    padding:          15px;                                /* 内边距为15px */       
+    box-sizing:       border-box;                          /* 设置box-sizing为border-box，确保内边距和边框不会增加元素的总尺寸 */      
+    border:           1px solid #ddd;                    /* 边框样式 */    
+    border-radius:    10px;                                /* 边框圆角 */     
+    box-shadow:       0 2px 4px rgba(0, 0, 0, 0.1);      /* 阴影效果 */ 
+    margin-right:     15px;                                /* 书籍之间的间距 */    
+    position:         relative;                            /* 启用相对定位，以便子元素可以使用绝对定位 */    
+}  
+  
+/* 第三个书籍的样式 */  
+div#book3 {    
+    margin-right:     0;                                   /* 设置右边距为0 */  
+}  
+  
+/* 书籍图片的样式 */  
+div.bookimage {     
+    width:            100%;                                /* 宽度100%，继承自父元素 */     
+    height:           500px;                               /* 高度500px */   
+    border-radius:    10px;                                /* 边框圆角 */    
+    overflow:         hidden;                              /* 隐藏超出容器的内容 */      
+    position:         relative;                            /* 启用相对定位 */
+}  
+  
+/* 书籍图片中img的样式 */  
+div.bookimage img {     
+    width:            100%;                                /* 宽度100%，继承自父元素 */       
+    height:           100%;                                /* 高度100%，继承自父元素 */    
+    object-fit:       cover;                               /* 保持图片的长宽比，并覆盖整个容器 */   
+    display:          block;                               /* 设置为块级元素，避免底部间隙 */   
+    border-radius:    inherit;                             /* 继承父元素的边框圆角 */    
+}  
+  
+/* 鼠标悬停在书籍图片上时的样式 */  
+div.bookimage img:hover {     
+    transform:        scale(1.05);                         /* 放大至原尺寸的1.05倍 */  
+}  
+  
+/* 书籍文本的样式 */  
+div.booktext {    
+    padding-top:      15px;                                /* 顶部内边距15px */      
+    font-family:      'Cutive Mono', monospace;            /* 字体样式 */  
+    list-style-type:  none;                                /* 移除列表标记 */  
+    counter-reset:    book-counter;                        /* 重置计数器 */  
+    color:          #333;                                /* 文本颜色 */
+    line-height:      1.5;                                 /* 行高 */    
+}  
+  
+/* 书籍文本中p的样式 */  
+div.booktext p {     
+    position:         relative;                            /* 相对定位 */   
+    padding-left:     20px;                                /* 左侧内边距20px */    
+}  
+  
+/* 在书籍文本段落（p）前添加计数器前缀的样式 */  
+div.booktext p::before {    
+    content:          counter(book-counter) ". ";          /* 设置伪元素的内容为计数器值和一个点号 */  
+    counter-increment:book-counter;                        /* 递增计数器 */  
+    position:         absolute;                            /* 使用绝对定位将伪元素放置在其父元素（p）的左上角 */     
+    left:             0;   
+    font-weight:      bold;                                /* 字体加粗以突出计数器值 */    
+    color:          rgb(11, 153, 215);                   /* 设置计数器值的颜色为蓝色 */   
+}    
+  
+/* 书籍文本中标题（h4）的样式 */  
+div.booktext h4 {     
+    margin:           0 10px;                              /* 设置标题上下外边距为0，左右外边距为10px */      
+    font-size:        1.2em;                               /* 字体大小设置为当前字体大小的1.2倍 */
+    font-weight:      bold;                                /* 字体加粗 */      
+    text-align:       center;                              /* 文本居中对齐 */  
+    border-bottom:    5px solid rgb(11, 153, 215);       /* 在标题下方添加一条蓝色底边 */  
+    padding-bottom:   5px;                                 /* 在标题下方添加5px的内边距，使底边与文本之间有间距 */   
+}

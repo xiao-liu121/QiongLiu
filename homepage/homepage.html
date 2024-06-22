@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="./css/background.css">
+    <link rel="stylesheet" href="./css/homepage.css">
+</head>
+<body>
+    <!-- 页眉区header，内部又分为三个部分：leftlogo、name、rightlogo -->
+    <header id="head">
+        <img src="./images/leftlogo.jpg" id="leftlogo">
+        <div id="name">Qiong Liu</div>
+        <img src="./images/rightlogo.jpg" id="rightlogo">
+    </header>
+    <!-- end of head -->
+    <!-- 导航区nav，均可实现跳转功能 -->
+    <nav>
+        <ul>  
+            <li><a href="./homepage.html" id="active">个人主页</a></li>
+            <li><a href="../interest/interest.html">兴趣爱好</a></li>  
+            <li><a href="../hometown/hometown.html">我的家乡</a></li>  
+            <li><a href="../travelling/travelling.html">旅行日记</a></li>  
+            <li><a href="../reading/reading.html">阅读打卡</a></li>  
+            <li><a href="../contact/contact.html">与我联系</a></li>  
+        </ul> 
+    </nav>
+    <!-- end of nav -->
+    <!-- 主内容区main，内部分为两个部分：wrapper和sidebar -->
+    <div id="main">
+         <!-- 主体内容区wrapper，内部是一个10行5列的表格 -->
+        <div id="wrapper">
+            <table>
+                <tr>
+                    <th>姓名</th>
+                    <td>刘琼</td>
+                    <th>出生年月</th>
+                    <td>2024年1月</td>
+                    <td rowspan="4" class="avatar-cell"></td>
+                </tr>
+                <tr>
+                    <th>民族</th>
+                    <td>汉族</td>
+                    <th>政治面貌</th>
+                    <td>共青团员</td>
+                </tr>
+                <tr>
+                    <th>电话</th>
+                    <td>15623511352</td>
+                    <th>学历</th>
+                    <td>本科</td>
+                </tr>
+                <tr>
+                    <th>邮箱</th>
+                    <td>1744074855@qq.com</td>
+                    <th>专业排名</th>
+                    <td>4/75</td>
+                </tr>
+                <tr>
+                    <th>专业</th>
+                    <td colspan="4" class="merged-cell" id="cont1">信息管理与信息系统</td>
+                </tr>
+                <tr>
+                    <th>主修课程</th>
+                    <td colspan="4" class="merged-cell" id="cont2">C++程序设计、数据结构、离散数学、Java程序设计、概率论、计算机网络、运筹与决策</td>
+                </tr>
+                <tr>
+                    <th>担任职务</th>
+                    <td colspan="4" class="merged-cell" id="cont3">
+                        <p>2023年6月-2024年6月   担任学院团委组织部负责人</p>
+                        <p>2024年2月-至今   担任班级组织委员</p>
+                        <p>2024年6月-至今   担任学院团委副书记</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>个人荣誉</th>
+                    <td colspan="4" class="merged-cell" id="cont4">
+                        <p>
+                            2022-2023学年获<span class="artist">国家励志奖学金</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            2023-2024学年获<span class="artist">校级"优秀学生干部"</span>
+                        </p>
+                        <p>
+                            计算机设计大赛<span class="artist">省级一等奖</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            第三十七届博文杯<span class="artist">担任项目负责人并获得校级二等奖</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>技能证书</th>
+                    <td colspan="4" class="merged-cell">
+                        <p>编程能力：掌握C++、python和java等多种编程语言</p>
+                        <p>计算机能力：熟练操作Windows平台上的各类应用软件，如Word等</p>
+                        <p>英语能力：大学英语四级证书</p>
+                        <p>语言能力：普通话二级甲等证书</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>自我评价</th>
+                    <td colspan="4" class="merged-cell">
+                        <p>1.在工作中吃苦耐劳，喜欢迎接新挑战</p>
+                        <p>2.参与过活动的策划，具有⼀定的组织策划能力</p>
+                        <p>3.工作上积极上进，细心负责，能够熟练运用办公软件</p>
+                        <p>4.勤奋好学，踏实肯干，动手能力强，认真负责，有很强的社会责任感和集体荣誉感</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- end of wrapper -->
+        <!-- 边栏区sidebar，内部分为两个部分：container1和text -->
+        <div id="sidebar">
+            <div id="container1">
+                <img src="./images/touxiang.jpg" alt="">
+            </div>
+            <div id="text">
+                <ul>
+                    <li>个人主页</li>
+                    <li>兴趣爱好</li>
+                    <li>我的家乡</li>
+                    <li>旅行日记</li>
+                    <li>阅读打卡</li>
+                    <li>与我联系</li>
+                </ul>
+            </div>
+        </div>
+        <!-- end of sidebar -->
+    </div>
+    <!-- end of main -->
+    <!-- 页脚区foot,内部有一个部分：foot-container -->
+    <footer id="foot">
+        <div id="foot-container">
+            <h5>Qiong Liu &copy 版权所有</h5>
+            <p>联系邮箱：1744074855@qq.com</p>
+        </div>
+    </footer>
+    <!-- end of foot -->
+</body>
+</html>

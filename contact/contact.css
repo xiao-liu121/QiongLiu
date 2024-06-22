@@ -1,0 +1,77 @@
+/* 将表单设置为表格的样式 */  
+form {  
+    display:               table;                              /* 使用表格布局来排列表单元素 */  
+    border:                1px solid rgb(218, 238, 254);     /* 表单边框样式 */  
+    padding:               20px;                               /* 表单内部填充 */  
+    margin:                auto;                               /* 表单实现水平居中（假设页面足够宽） */
+    background-color:    rgba(218, 238, 254, 0.5);           /* 使用rgba设置半透明的背景色 */  
+    border-radius:         50px;                               /* 边框圆角 */ 
+    border-spacing:        30px;                               /* 设置表格边框之间的距离 */
+}  
+  
+/* 设置表单标题的样式 */  
+form h3 {  
+    display:               table-caption;                      /* 标题显示为表格的标题 */  
+    text-align:            center;                             /* 标题文本居中对齐 */  
+    font-size:             1.8em;                              /* 字体大小 */  
+}  
+  
+/* 自定义的表格行样式 */  
+div.tableRow {  
+    display:               table-row;                          /* 使用表格行的显示方式 */  
+}  
+  
+/* 表格行内的标签样式 */  
+div.tableRow label {  
+    display:               table-cell;                         /* 使用表格单元格的显示方式 */  
+    vertical-align:        top;                                /* 垂直对齐方式 */  
+    padding:               3px;                                /* 内边距 */  
+}  
+  
+/* 表格行内的第一个label样式 */  
+div.tableRow label:first-child {  
+    text-align:            right;                              /* 第一个标签文本右对齐 */  
+}  
+  
+/* 表单项的输入框样式 */  
+div.tableRow input {  
+    font-family:           华文楷体;                            /* 设置字体为华文楷体 */  
+    font-weight:           bold;                               /* 字体加粗 */  
+    border-radius:         5px;                                /* 边框圆角 */  
+    width:                 500px;                              /* 设置宽度 */  
+    height:                30px;                               /* 设置高度 */  
+    border:                1px solid rgb(11, 153, 215);      /* 设置边框样式 */  
+    font-size:             1em;                                /* 字体大小 */  
+}  
+  
+/* 多行文本输入框的样式 */  
+div.tableRow textarea {  
+    font-family:           华文楷体;                            /* 设置字体为华文楷体 */  
+    font-weight:           bold;                               /* 字体加粗 */  
+    font-size:             1.1em;                              /* 字体大小 */ 
+    border-radius:         5px;                                /* 边框圆角 */ 
+    width:                 500px;                              /* 设置宽度 */ 
+    height:                150px;                              /* 设置高度 */   
+    border:                1px solid rgb(11, 153, 215);      /* 设置边框样式 */ 
+}  
+  
+/* 提交按钮的样式 */  
+div.tableRow input#submit {   
+    font-family:           华文楷体;  
+    font-weight:           bold;  
+    font-size:             1.2em;  
+    width:                 120px;                              /* 设置宽度 */  
+    height:                50px;                               /* 设置高度 */  
+    padding:               10px 20px;                          /* 设置内边距 */  
+    background-color:    rgb(54, 179, 241);                  /* 设置背景色 */  
+    border:                none;                               /* 无边框 */  
+    border-radius:         5px;                                /* 边框圆角 */  
+    cursor:                pointer;                            /* 鼠标悬停时显示为手形图标 */   
+    transition:            background-color 0.3s ease;         /* 设置背景色过渡效果 */    
+    margin:                auto 270px auto 180px;  
+}  
+  
+/* 提交按钮悬停时的样式 */  
+div.tableRow input#submit:hover {    
+    background-color:    rgba(54, 179, 241, 0.1);            /* 背景色变为半透明 */  
+}

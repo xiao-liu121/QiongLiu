@@ -1,0 +1,75 @@
+/* 外层包裹容器的样式 */  
+#wrapper {   
+    display:              flex;                             /* 使用Flex布局，使得子元素可以灵活排列 */    
+    width:                100%;                             /* 宽度设置为100% */  
+    max-width:            1500px;                           /* 最大宽度不超过1500px */
+    margin:               50px 10%;                         /* 上下外边距为50px、左右外边距为10% */
+    box-sizing:           border-box;                       /* 使用border-box盒模型，使得元素的宽度和高度包括内边距和边框 */
+    background-color:   rgba(162, 208, 248, 0.372);       /* 设置背景颜色为半透明蓝色 */  
+}  
+  
+/* 表格的样式 */  
+table {    
+    width:                100%;                             /* 宽度设置为100% */
+    height:               800px;                            /* 高度固定为800px */
+    border-collapse:      collapse;                         /* 单元格边框合并为一个单一的边框 */  
+}  
+  
+/* 表格头部和单元格的通用样式 */  
+th, td {  
+    padding:              10px;                             /* 内边距为10px */    
+    border:               1px solid #ddd;                 /* 单元格边框为1px宽，实线，灰色 */ 
+    text-align:           center;                           /* 文本居中 */ 
+}  
+  
+/* 表格头部的样式 */  
+th {     
+    width:                10%;                              /* 宽度固定为10% */
+    background-color:   rgb(162, 208, 248);               /* 背景颜色为蓝色 */ 
+}  
+  
+/* 表格单元格的样式 */  
+td {   
+    width:                32%;                              /* 宽度设置为32% */
+    background-color:   rgb(162, 208, 248, 0.372);        /* 背景颜色为半透明的蓝色 */    
+} 
+  
+/* 特定单元格类：用于显示头像的单元格 */  
+td.avatar-cell {     
+    width:                14%;                              
+    height:               160px;     
+    background-size:      cover;                              /* 背景图片覆盖整个单元格，保持图片纵横比 */  
+    background-image:     url(../images/zhengjianzhao.jpg);    
+    text-align:           center;                             /* 文本在单元格中居中对齐 */
+}  
+  
+/* 特定单元格类：合并的单元格 */  
+td.merged-cell {     
+    background-color:   rgb(162, 208, 248, 0.372);          /* 背景颜色与常规单元格相同 */   
+    height:               150px;                              /* 高度为150px */
+}  
+  
+/* 特定单元格ID的样式 */  
+td#cont1 {
+    height:               20px;
+}
+
+/* 特定单元格ID的样式 */  
+td#cont2 {
+    height:               20px;
+}
+
+/* 特定单元格ID的样式 */  
+td#cont3 {
+    height:               35px;
+}
+
+/* 特定单元格ID的样式 */  
+td#cont4 {
+    height:               80px;
+}
+  
+/* 特定文本类：用于加粗文本 */  
+span.artist {  
+    font-weight:          bold;  
+}  

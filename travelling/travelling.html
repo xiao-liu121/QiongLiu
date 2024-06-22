@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅行日记</title>
+    <link rel="stylesheet" href="../homepage/css/background.css">
+    <link rel="stylesheet" href="./travelling.css">
+</head>
+<body>
+    <!-- 页眉区header，内部又分为三个部分：leftlogo、name、rightlogo -->
+    <header id="head">
+        <img src="./images/leftlogo.jpg" id="leftlogo">
+        <div id="name">Qiong Liu</div>
+        <img src="./images/rightlogo.jpg" id="rightlogo">
+    </header>
+    <!-- end of head -->
+    <!-- 导航区nav，均可实现跳转功能 -->
+    <nav>
+        <ul>  
+            <li><a href="../homepage/homepage.html">个人主页</a></li>
+            <li><a href="../interest/interest.html">兴趣爱好</a></li>  
+            <li><a href="../hometown/hometown.html">我的家乡</a></li>  
+            <li><a href="./travelling.html"  id="active">旅行日记</a></li>  
+            <li><a href="../reading/reading.html">阅读打卡</a></li>  
+            <li><a href="../contact/contact.html">与我联系</a></li>  
+        </ul> 
+    </nav>
+    <!-- end of nav -->
+    <!-- 主内容区main，内部分为两个部分：wrapper和sidebar -->
+    <div id="main">
+        <!-- 主体内容区wrapper，内部有两个部分：travel-diary和caption -->
+        <div id="wrapper"> 
+            <!-- travel-diary，内部又分为六个部分，每个区都有一个公共类travel-entry -->
+            <div id="travel-diary">  
+                <div class="travel-entry" id="changsha">  
+                    <h2>长沙--坡子街</h2>    
+                    <p>长沙之行，美食与文化的碰撞让人难忘。街头巷尾的小吃令人垂涎，臭豆腐、糖油粑粑，每一口都是地道的湖南味。橘子洲头，江风拂面，夜景如画。这座城市既有历史的厚重，又有现代的活力，让我流连忘返。</p>  
+                </div>  
+                <div class="travel-entry" id="kunming">  
+                    <h2>昆明--翠湖公园</h2>    
+                    <p>气候宜人，四季如春，空气清新。走在翠湖公园，我感受到了浓厚的文化氛围和市民的悠闲生活。鲜花市场五彩斑斓，各种花卉令人目不暇接。我还品尝了地道的云南过桥米线，美味至极。整个城市充满了活力与和谐，是一次难忘的旅行体验。</p>  
+                </div>  
+                <div class="travel-entry" id="wuhan">  
+                    <h2>武汉--东湖</h2>    
+                    <p>在武汉上学的日子里，除了学习，我也体验了这座城市的魅力。东湖的湖光山色，黄鹤楼的古朴巍峨，都令人印象深刻。热干面、豆皮等美食更是让我回味无穷。每当周末，漫步在长江大桥，感受江风拂面，心中充满宁静与满足。武汉，一个充满活力和历史底蕴的城市，让我爱上学习，也爱上旅行。</p>    
+                </div>  
+                <div class="travel-entry" id="enshi">  
+                    <h2>恩施--恩施大峡谷</h2>    
+                    <p>在恩施旅游，我深深被这片大自然的鬼斧神工所震撼。峡谷深邃，溪流潺潺，仿佛置身于一幅山水画中。当地的风土人情和美食也让人流连忘返。恩施不仅让我领略了自然的美丽，更让我感受到了生活的宁静与纯粹。这是一次难忘的旅行体验。</p>    
+                </div>  
+                <div class="travel-entry" id="xianggelila">  
+                    <h2>香格里拉--拉普达措公园</h2>    
+                    <p>在香格里拉，我感受到了无与伦比的宁静与美丽。拉普达措公园的湖光山色令人陶醉，仿佛置身于仙境之中。清新的空气，宁静的湖面，都让我忘却了城市的喧嚣。漫步在湖边，心灵得到了真正的放松与净化。</p>    
+                </div>  
+                <div class="travel-entry" id="xizang">  
+                    <h2>西藏--布达拉宫</h2>    
+                    <p>在西藏的几天里，我真正体验到了高原的辽阔与纯净。沿途的雪山巍峨壮观，仿佛能触摸到天空；湖泊清澈如镜，倒映着蓝天白云。当地人的生活方式和独特的文化也让我感受到了不同于城市的宁静与和谐，这次旅行令我难忘。</p>    
+                </div>
+            </div> 
+            <!-- end of travel-diary -->
+            <div id="caption">
+                <h2>在旅行的路上，遇见不同的自己，也遇见更好的世界</h2>
+            </div> 
+        </div>  
+        <!-- end of wrapper -->
+        <!-- 边栏区sidebar，内部分为两个部分：container1和text -->
+        <div id="sidebar">
+            <div id="container1">
+                <img src="./images/touxiang.jpg" alt="">
+            </div>
+            <div id="text">
+                <ul>
+                    <li>个人主页</li>
+                    <li>兴趣爱好</li>
+                    <li>我的家乡</li>
+                    <li>旅行日记</li>
+                    <li>阅读打卡</li>
+                    <li>与我联系</li>
+                </ul>
+            </div>
+        </div>
+        <!-- end of sidebar -->
+    </div>
+    <!-- end of main -->
+    <!-- 页脚区foot,内部有一个部分：foot-container -->
+    <footer id="foot">
+        <div id="foot-container">
+            <h5>Qiong Liu &copy 版权所有</h5>
+            <p>联系邮箱：1744074855@qq.com</p>
+        </div>
+    </footer>
+    <!-- end of foot -->
+</body>

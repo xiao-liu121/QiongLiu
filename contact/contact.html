@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>与我联系</title>
+    <link rel="stylesheet" href="../homepage/css/background.css">
+    <link rel="stylesheet" href="./contact.css">
+</head>
+
+<body>
+    <!-- 页眉区header，内部又分为三个部分：leftlogo、name、rightlogo -->
+    <header id="head">
+        <img src="./images/leftlogo.jpg" id="leftlogo">
+        <div id="name">Qiong Liu</div>
+        <img src="./images/rightlogo.jpg" id="rightlogo">
+    </header>
+    <!-- end of head -->
+    <!-- 导航区nav，均可实现跳转功能 -->
+    <nav>
+        <ul>
+            <li><a href="../homepage/homepage.html">个人主页</a></li>
+            <li><a href="../interest/interest.html">兴趣爱好</a></li>
+            <li><a href="../hometown/hometown.html">我的家乡</a></li>
+            <li><a href="../travelling/travelling.html">旅行日记</a></li>
+            <li><a href="../reading/reading.html">阅读打卡</a></li>
+            <li><a href="./contact.html" id="active">与我联系</a></li>
+        </ul>
+    </nav>
+    <!-- end of nav -->
+    <!-- 主内容区main，内部分为两个部分：form和sidebar -->
+    <div id="main">
+        <!-- 表单form，里面四个部分，每个部分都有一个公共类tableRow -->
+        <form action="../index.html" method="post">
+            <h3>与我联系</h3>
+            <div class="tableRow">
+                <label for="name">姓名：</label>
+                <input id="name" type="text" name="name">
+            </div>
+            <div class="tableRow">
+                <label for="email">邮箱：</label>
+                <input id="email" type="email" name="email">
+            </div>
+            <div class="tableRow">
+                <label for="meaaage">留言：</label>
+                <textarea id="message" rows="4" name="message"></textarea>
+            </div>
+            <div class="tableRow">
+                <label></label> 
+                <input type="submit" value="提交留言" id="submit">  
+            </div> 
+        </form>
+        <!-- end of form -->
+        <!-- 边栏区sidebar，内部分为两个部分：container1和text -->
+        <div id="sidebar">
+            <div id="container1">
+                <img src="./images/touxiang.jpg" alt="">
+            </div>
+            <div id="text">
+                <ul>
+                    <li>个人主页</li>
+                    <li>兴趣爱好</li>
+                    <li>我的家乡</li>
+                    <li>旅行日记</li>
+                    <li>阅读打卡</li>
+                    <li>与我联系</li>
+                </ul>
+            </div>
+        </div>
+        <!-- end of sidebar -->
+    </div>
+    <!-- end of main -->
+    <!-- 页脚区foot,内部有一个部分：foot-container -->
+    <footer id="foot">
+        <div id="foot-container">
+            <h5>Qiong Liu &copy 版权所有</h5>
+            <p>联系邮箱：1744074855@qq.com</p>
+        </div>
+    </footer>
+    <!-- end of foot -->
+</body>
